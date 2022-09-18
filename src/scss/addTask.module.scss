@@ -1,0 +1,70 @@
+.root {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  > input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    padding: 10px 15px;
+    outline: none;
+
+    &::placeholder {
+      color: #c7c7c7;
+    }
+
+    &:hover {
+      border: 1px solid #d1cfcf;
+    }
+
+    &:focus-visible {
+      border: 2px solid #d1cfcf;
+      padding: 10px 14px;
+    }
+  }
+
+  > div {
+    display: flex;
+    margin-top: 15px;
+
+    > button {
+      font-weight: 500;
+      height: 35px;
+      padding: 7px 10px;
+      font-size: 15px;
+      transition: background-color 0.1s ease-out;
+    }
+
+    > button:first-child {
+      background-color: #4dd599;
+      color: #ffffff;
+      margin-right: 10px;
+
+      &:hover,
+      &:focus-visible {
+        background-color: #46be8a;
+      }
+
+      &:active {
+        background-color: #3ca074;
+        transition: none;
+      }
+    }
+
+    > button:last-child {
+      background-color: #f4f6f8;
+      color: #9c9c9c;
+
+      &:hover,
+      &:focus-visible {
+        background-color: #e3e7eb;
+      }
+
+      &:active {
+        background-color: #bbbec2;
+        transition: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.root {
+  display: flex;
+  padding: 55px 20px 0;
+  flex: 1;
+  background-color: #fff;
+  gap: 40px;
+  position: relative;
+
+  > button {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 15px;
+    right: 15px;
+    border-radius: 6px;
+    color: #b4b4b4;
+    cursor: pointer;
+
+    &:hover {
+      color: #505050;
+      background-color: #e9ecf0;
+    }
+
+    > svg {
+      width: 40px;
+      height: 40px;
+      padding: 3px;
+    }
+  }
+
+  > .contentBlocks {
+    overflow: hidden;
+    display: flex;
+  }
+}
+
+.table {
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+.row {
+  flex-wrap: nowrap;
+  flex-direction: column;
+}

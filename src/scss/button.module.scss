@@ -1,0 +1,17 @@
+.root {
+  color: #767676;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 4px;
+  padding: 5px 8px;
+
+  > svg {
+    margin-right: 4px;
+    min-width: 14px;
+  }
+}

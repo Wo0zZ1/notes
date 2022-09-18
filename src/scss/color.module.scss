@@ -1,0 +1,15 @@
+.root {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+
+  &:focus-visible {
+    border: 2px solid #525252;
+  }
+}
+
+.active {
+  border: 2px solid #525252;
+}

@@ -1,0 +1,43 @@
+.root {
+  min-width: 250px;
+  width: auto;
+
+  &:hover {
+    > .addButton {
+      opacity: 1;
+    }
+
+    > button {
+      opacity: 1;
+    }
+  }
+
+  > .addButton {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    opacity: 0;
+    border-radius: 4px;
+    width: fit-content;
+
+    > button {
+      &:hover,
+      &:focus-visible {
+        opacity: 1;
+        background-color: #f4f6f8;
+      }
+
+      &:active {
+        background-color: #e8eaec;
+      }
+    }
+  }
+
+  .tasks {
+    margin-top: 30px;
+    padding-left: 8px;
+
+    > ul > li:last-child > div {
+      margin-bottom: 0;
+    }
+  }
+}
